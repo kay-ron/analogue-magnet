@@ -1,21 +1,21 @@
 {
-  "name": "am-uri",
+  "name": "isolation",
   "version": "0.0.0",
-  "description": "Variant of the Magnet URI scheme for severless filesharing",
+  "description": "Self-hosted, serverless, distributed filesharing protocol inspired by BitTorrent",
   "main": "init.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kay-ron/am-uri.git"
+    "url": "https://github.com/kay-ron/isolation.git"
   },
-  "author": "neko_is_kitty",
+  "author": "neko-is-kitty",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kay-ron/am-uri/issues"
+    "url": "https://github.com/neko-is-kitty/isolation/issues"
   },
-  "homepage": "https://github.com/kay-ron/am-uri#readme",
+  "homepage": "https://github.com/neko-is-kitty/isolation#readme",
   "dependencies": {
     "level": "^4.0.0"
   }
