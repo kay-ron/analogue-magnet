@@ -13,7 +13,7 @@ function toARL(xt) {
     var opts = []
     
     this.namespace
-    this.port = [1776, 1791, 1865, 1964]
+    this.port = new portPicker(Math.floor(Math.random() * Math.floor(20)))
     this.filehash = new cryphas(xt, 'sha256')
     
     function cryphas(file, method) {
@@ -27,6 +27,14 @@ function toARL(xt) {
             else { fin = hash.digest('hex') }
             return fin
         })
+    }
+
+    function portPicker(value) {
+        const ports = [1770, 1771, 1773, 1794, 1797, 1839, 1840, 
+        1841, 1842, 1843, 1844, 1845, 1846, 1847, 1848, 1849,
+        2351, 2352, 2353, 2354, 2355]
+
+        return ports[value]
     }
 
     opts.push('arl:')
